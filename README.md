@@ -1,6 +1,6 @@
-# Beginning Responsive Web Development with HTML and CSS
+# Beginning Responsive Web Development with HTML and CSS - eLearning
 
-This is the code repository for Beginning Responsive Web Development with HTML and CSS, published by Packt. It contains all the supporting project files necessary to follow the course from start to finish.
+This is the code repository for the eLearning course Beginning Responsive Web Development with HTML and CSS, published by Packt. It contains all the supporting project files necessary to follow the course from start to finish.
 
 ## About the Course
 
