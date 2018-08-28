@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+}
+
+nav a {
+    background: yellow;
+}
+
+nav a:last-child {
+    background: orange;
+    margin-left: auto;
+}
+
+nav a:nth-of-type(3) {
+    background: pink;
+}

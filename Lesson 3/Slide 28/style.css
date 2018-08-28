@@ -1,0 +1,7 @@
+.InlineFlex {
+    display: inlie-flex;
+    align-items: center;
+    height: 120px;
+    padding: 0 4px;
+    background-color: yellow;
+}

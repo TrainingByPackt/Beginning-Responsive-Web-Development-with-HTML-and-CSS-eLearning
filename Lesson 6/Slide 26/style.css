@@ -1,0 +1,22 @@
+h1 {
+    color: darkblue;
+    font-family: helvetica, arial;
+    font-size: 3em;
+    text-align: center;
+    
+    text-shadow: 10px 10px 10px pink;
+    
+    margin: auto;
+    width: 80%;
+    padding: 1em;
+    
+    box-shadow: inset 0px 0px 50px rgb(128, 128, 128);
+
+    background:
+        radial-gradient(pink 15%, transparent 16%) 0 0,
+        radial-gradient(orange 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.5) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color: yellow;
+  background-size: 60px 60px;
+}

@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; }
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: red;
+}
+
+.Site-content {
+    flex: 1;
+    background: blue;
+}

@@ -1,0 +1,9 @@
+p {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    height: 100px;
+    background: yellow;
+}

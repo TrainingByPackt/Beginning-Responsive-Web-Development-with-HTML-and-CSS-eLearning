@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1rem .5rem;
+	font-size: 1.3rem;
+	line-height: 1.2;
+	max-width: 60rem;
+	margin: 0 auto;
+	color: #333;
+}
+
+/* Add the img element here */
+
+.Header {
+	text-align: center;
+	border-bottom: 8px double #f9f9f9;
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+
+.Strap {
+	font-size: 1rem;
+}
+
+
+.MoneyShot {
+	position: relative;
+}
+
+.MoneyShotImg {
+	border: 6px solid #e8cfa9;
+	border-radius: 4px;
+}
+
+.LogoWrapper {
+	display: block;
+}
+
+.ImageCaption {
+	font-size: .75rem;
+	position: absolute;
+	bottom: .5rem;
+	right: 1rem;
+}
+
+.IntroText {
+	font-size: 1.8rem;
+	font-style: italic;
+}
+
+.MethodWrapper li {
+	padding: .4rem 0;
+}
+
+.MethodWrapper li:after {
+	content: "✼";
+	display: block;
+	text-align: center;
+	margin: 1rem 0 .5rem 0;
+	color: #eee;
+}
+
+/* Add the media query and layout styles here /*
