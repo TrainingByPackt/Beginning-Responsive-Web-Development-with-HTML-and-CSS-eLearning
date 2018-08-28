@@ -1,0 +1,14 @@
+#Star {
+    fill: orange;
+    transition: all 1s;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+}
+
+#Star:hover {
+    fill: pink;
+    transform: rotate(30deg);
+}

@@ -1,0 +1,15 @@
+.MenuWrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .MenuWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+ 
+.ListItem, .LastItem {
+    padding: 10px;
+}

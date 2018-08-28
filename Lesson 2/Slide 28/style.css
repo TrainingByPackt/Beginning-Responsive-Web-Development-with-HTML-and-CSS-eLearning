@@ -1,0 +1,31 @@
+body {
+    background-color: grey;
+}
+nav {
+    background-color: pink;
+}
+
+@media screen and (min-width: 320px) {
+    body {
+        background-color: green;
+    }
+    nav {
+        width: 95%;
+    }
+}
+@media screen and (min-width: 768px) {
+    body {
+        background-color: orange;
+    }
+    nav {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 960px) {
+    body {
+        background-color: red;
+    }
+    nav {
+        width: 30%;
+    }
+}

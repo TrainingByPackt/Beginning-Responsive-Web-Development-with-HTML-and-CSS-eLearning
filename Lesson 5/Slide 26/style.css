@@ -1,0 +1,7 @@
+img[alt] {
+    border: 5px solid green;
+}
+
+img[data-size="small"] {
+    border: 5px solid red;
+}

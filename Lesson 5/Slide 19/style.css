@@ -1,0 +1,10 @@
+nav a {
+    display: inline-block;
+}
+
+@supports (display: flex) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+}

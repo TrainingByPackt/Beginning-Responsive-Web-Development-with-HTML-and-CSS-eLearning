@@ -1,0 +1,22 @@
+#box {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;    
+    background: pink;    
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: rotate(0deg);
+    
+    transition: transform 5s linear;
+    
+    transform-origin: left top;
+}
+
+#box:hover {
+    transform: roate(360deg);
+}

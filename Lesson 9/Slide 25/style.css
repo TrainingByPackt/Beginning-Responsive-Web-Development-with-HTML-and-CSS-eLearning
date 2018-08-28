@@ -1,0 +1,12 @@
+#star {
+    /* fall back for PNG goes here */
+    background: orange url(star.svg) center top no-repeat;
+    background-size: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 400px;
+}

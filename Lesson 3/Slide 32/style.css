@@ -1,0 +1,13 @@
+.FlexWrapper {
+    background-color: indigo;
+    display: flex;
+    height: 200px;
+    width: 400px;
+    align-items: center;
+}
+.FlexInner {
+    background-color: orange;
+    display: flex;
+    height: 100px;
+    width: 200px;
+}

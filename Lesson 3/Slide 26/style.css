@@ -1,0 +1,14 @@
+.MenuWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.ListItem, .LastItem {
+    padding: 10px;
+}
+
+/*
+.lastItem {
+    margin-right: auto;
+}*/
