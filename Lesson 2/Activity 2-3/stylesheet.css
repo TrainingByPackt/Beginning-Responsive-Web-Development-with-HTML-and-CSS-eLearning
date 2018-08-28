@@ -1,0 +1,51 @@
+body{
+  margin: 20px 50px;
+}
+p{
+  margin: 10px;
+}
+
+body {
+  background-color: grey;
+}
+@media (min-width: 320px) {
+  body {
+   background-color: green;
+  }
+}
+@media (min-width: 550px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-color: orange;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 320px) and (orientation: portrait) {
+  body {
+   background-color: grey;
+  }
+}
+@media (min-width: 550px) and (orientation: portrait) {
+  body {
+    background-color: purple;
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  body {
+    background-color: blue;
+  }
+}
+@media (min-width: 960px) and (orientation: portrait) {
+  body {
+    background-color: aqua;
+  }
+}

@@ -1,0 +1,72 @@
+*****Activity 3-1 - Step 2*****
+
+.Left {
+  height: 625px;
+  width: 12.5%;
+  background-color: #03A66A;
+  display: inline-block;
+}
+.Middle {
+  height: 625px;
+  width: 65.625%;
+  background-color: #bbbf90;
+  display: inline-block;
+}
+.Right {
+  height: 625px;
+  width: 21.875%;
+  background-color: #03A66A;
+  display: inline-block;
+}
+
+-----------------------------
+
+*****Activity 3-2 - Step 2*****
+
+.WrapMiddle {
+  width: 100%;
+  font-size: 0;
+  display: flex;
+}
+.Left {
+  height: 625px;
+  width: 12.5%;
+  background-color: #03A66A;
+  display: flex;
+  flex: 1 1 120px;
+}
+.Middle {
+  height: 625px;
+  width: 62.5%;
+  background-color: #bbbf90;
+  display: flex;
+  flex: 5 1 600px;
+}
+.Right {
+  height: 625px;
+  width: 25%;
+  background-color: #03A66A;
+  display: flex;
+  flex: 2 1 240px;
+}
+
+--------------------------------
+
+*****Activity 3-3 - Step 2*****
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+--------------------------------
+
+*****Activity 3-4 - Step 2*****
+
+<picture>
+  <source media="(min-width: 800px)" srcset="img/tiger.jpg">
+  <source media="(min-width: 400px)" srcset="img/cat.jpg">
+  <img src="img/kitten.jpg" alt="A feline will be shown!">
+</picture>

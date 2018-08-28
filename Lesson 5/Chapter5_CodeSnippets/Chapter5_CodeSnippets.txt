@@ -1,0 +1,257 @@
+*****Terminology we use to describe a CSS rule*****
+
+.round { /* selector */
+  border-radius: 10px; /* declaration */
+}
+
+----------------------------------------
+
+*****Adding a Gap and Column Divider*****
+
+main {
+  column-gap: 2em;
+  column-rule: thin dotted #999;
+  column-width: 12em;
+}
+
+----------------------------------------
+
+*****Feature queries*****
+
+@supports (flashing-sausages: lincolnshire) {
+  body {
+    sausage-sound: sizzling;
+    sausage-color: slighty-burnt;
+    background-color: brown;
+  }
+}
+
+----------------------------------------
+
+*****Feature queries - Use Flexbox for when browsers support it and fall back to another layout technique when they don't*****
+
+@supports (display: flex) {
+  .Item {
+    display: inline-flex;
+  }
+}
+@supports not (display: flex) {
+  .Item {
+    display: inline-block;
+  }
+}
+
+----------------------------------------
+
+*****Feature queries - Cover devices that don't support @supports*****
+
+.Item {
+  display: inline-block;
+}
+@supports (display: flex) {
+  .Item {
+    display: inline-flex;
+  }
+}
+
+--------------------------------------------
+
+*****Combining Conditionals*****
+
+@supports ((display: flex) and (pointer: coarse)) {
+  .Item {
+    display: inline-flex;
+  }
+}
+
+-------------------------------------
+
+*****Feature Detection with Modernizr*****
+
+.widget {
+  height: 1rem;
+}
+.touch .widget {
+  height: 2rem;
+}
+
+-------------------------------------
+
+*****Feature Detection with Modernizr - Flip the logic*****
+
+.widget {
+  height: 2rem;
+}
+.no-touch .widget {
+  height: 1rem;
+}
+
+-----------------------------------------
+
+*****CSS3 attribute selectors*****
+
+img[alt] {
+  border: 3px dashed #e15f5f;
+}
+
+----------------------------------------
+
+*****Gotchas with Attribute Selection - The whitespace separated selector*****
+
+[data-film~="film"] {
+  color: red;
+}
+
+-----------------------------------------
+
+*****Gotchas with Attribute Selection - Select the entire attribute*****
+
+[data-film="awful moulin-rouge film"] {
+  color: red;
+}
+
+
+-----------------------------------------
+
+*****Gotchas with Attribute Selection - Join a couple (or as many as were needed) of substring attribute selectors*****
+
+[data-film*="awful"][data-film*="moulin-rouge"] {
+  color: red;
+}
+
+----------------------------------------
+
+*****CSS3 Structural Pseudo-classes*****
+
+<nav class="nav-Wrapper">
+  <a href="/home" class="nav-Link">Home</a>
+  <a href="/About" class="nav-Link">About</a>
+  <a href="/Films" class="nav-Link">Films</a>
+  <a href="/Forum" class="nav-Link">Forum</a>
+  <a href="/Contact-Us" class="nav-Link nav-LinkLast">Contact Us</a>
+</nav>
+
+----------------------------------------
+
+*****The :last-child Selector - Selector applicable for the first item in a list*****
+
+div:first-child {
+  /* Styles */
+}
+
+----------------------------------------
+
+*****The :last-child Selector - Selector that can also match the last*****
+
+div:last-child {
+  /* Styles */
+}
+
+
+@media (min-width: 60rem) {
+  .nav-Wrapper {
+    display: flex;
+  }
+  .nav-Link:last-child {
+    margin-left: auto;
+  }
+}
+
+-------------------------------------
+
+*****The nth-child Selectors - Select the odd ones*****
+
+.nav-Link:nth-child(odd) {
+  /* Styles */
+}
+
+--------------------------------------
+
+*****The nth-child Selectors - Select the even ones*****
+
+.nav-Link:nth-child(even) {
+  /* Styles */
+}
+
+
+--------------------------------------
+
+*****The Negation (:not) Selector - index.html*****
+
+<div class="a-div"></div>
+<div class="a-div"></div>
+<div class="a-div"></div>
+<div class="a-div not-me"></div>
+<div class="a-div"></div>
+
+---------------------------------------
+
+*****The Empty (:empty) Selector - Whitespace is not empty*****
+
+<div class="thing"> </div>
+
+--------------------------------------
+
+*****Doing Something with :first-line Regardless of Viewport*****
+
+p::first-line {
+  color: #ff0cff;
+}
+
+---------------------------------------
+
+*****CSS Custom Properties and Variables*****
+
+:root {
+  --MainFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+-----------------------------------------------
+
+*****CSS Custom Properties and Variables - Reference the value with the var() notation*****
+
+.Title {
+  font-family: var(--MainFont);
+}
+
+-------------------------------------------------
+
+*****CSS calc*****
+
+.thing {
+  width: calc(50% - 10px);
+}
+
+----------------------------------------------------
+
+*****Implementing Web Fonts with @font-face - the rule for Roboto Regular*****
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('Roboto-Regular-webfont.eot');
+  src: url('Roboto-Regular-webfont.eot?#iefix') format('embeddedopentype'),
+       url('Roboto-Regular-webfont.woff') format('woff'),
+       url('Roboto-Regular-webfont.ttf') format('truetype'),
+       url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+-----------------------------------------------------
+
+*****Implementing Web Fonts with @font-face - Amended paths*****
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/Roboto-Regular-webfont.eot');
+  src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+       url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+       url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+------------------------------------------------------
+
+

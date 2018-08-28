@@ -1,0 +1,58 @@
+*****Activity 4-2 - Step 2*****
+
+<a href="http://www.test.com/contactme"><h3>Contact Me</h3></a>
+<address>
+  Dev Eloper<br>
+  123 Fake Street<br>
+  Suite 456<br>
+  Anytown, PA 01234-5678<br>
+  USA
+</address>
+
+
+----------------------------------
+
+*****Activity 4-2 - Step 3*****
+
+<section>
+  <details>
+    <summary>
+      <h2>article section summary h2</h2>
+    </summary>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+  </details>
+</section>
+
+
+--------------------------------
+
+*****Activity 4-2 - Step 5*****
+
+article summary h2 {
+  display: inline-block;
+}
+.footer-container footer > a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-container footer > a h3{
+  margin-bottom: .3em;
+}
+
+---------------------------------
+
+*****Activity 4-3 - Step 2*****
+
+<section>
+  <details>
+    <summary>
+      <h2>article section summary h2</h2>
+    </summary>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+  </details>                      
+  <video controls>
+    <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+    <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg>
+  </video>
+</section>
+

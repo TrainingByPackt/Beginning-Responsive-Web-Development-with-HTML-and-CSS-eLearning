@@ -1,0 +1,232 @@
+*****Activity 8-1 - Step 2*****
+
+<header>
+  <h1>Contact</h1>
+  <p>Please use this form to contact us with your questions or inquiries. We typically respond within 48 hours.</p>
+</header>
+<section>
+  <form id="contact" method="post">
+    <fieldset class="form-inquiry-wrapper">
+      <legend>Your question or inquiry? (part 1 of 2)</legend>
+       <div class="form-Input_Wrapper">
+        <label for="department">The department in question?</label>
+        <input id="department" name="department" type="text" placeholder="e.g. Accounting" required>
+      </div>
+      <div class="form-Input_Wrapper">
+        <label for="severity">Severity of Issue (scale of 1-10, 10 being worst)</label>
+        <input id="severity" name="severity" type="number" min="1" max="10" required>
+      </div>
+      <div class="form-Input_Wrapper">
+        <label for="urgency">Urgency of Issue</label>
+        <input id="urgency" name="urgency" type="text" list="urgencyList">
+        <datalist id="urgencyList">
+          <select>
+            <option value="Not Urgent"></option>
+            <option value="Moderately Urgent"></option>
+            <option value="Very Urgent"></option>
+            <option value="Bring the cavalry, there are rats in the basement."></option>
+            <option value="Please help, we are close to being eaten by zombies!"></option>
+          </select>
+        </datalist>
+      </div>
+      <div class="form-Input_Wrapper">
+        <label for="inquiry">What is your question or Inquiry?</label><br>
+        <textarea id="inquiry" cols="50" name="inquiry" placeholder="Please give us a summary of the job and any abnormalities." required></textarea>
+      </div>
+    </fieldset>
+    <fieldset class="form-you-wrapper">
+      <legend>About you? (part 2 of 2)</legend>
+      <div class="form-Input_Wrapper">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" placeholder="FirstName LastName (A-z, upper/lowercase, each 3-30 characters)" required>
+      </div>
+      <div class="form-Input_Wrapper">
+        <label for="color">Your favorite color</label>
+        <input id="color" name="color" type="color">
+      </div>
+      <div class="form-Input_Wrapper">
+        <label for="date">Best Date/Time to contact you</label>
+        <input id="date" class="pickDate" type="date" name="date">
+      </div>
+      <div class="form-Input_Wrapper">
+        <label for="tel">Telephone</label>
+        <input id="tel" name="tel" type="tel" placeholder="1-234-546758" autocomplete="off" required>
+      </div>
+      <div class="form-Input_Wrapper">
+        <label for="email">Your Email address</label>
+        <input id="email" name="email" type="email" placeholder="mad_max@gmail.com" required>
+      </div>
+      <div class="form-Input_Wrapper">
+        <label for="web">Your Web address</label>
+        <input id="web" name="web" type="url" placeholder="www.test.com">
+      </div>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit Contact Form">
+  </form>
+</section>
+
+
+-------------------------------------------------------------------------------------------
+
+*****Activity 8-2 - Step 2*****
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+fieldset {
+  border-radius: 3px;
+  border: 1px solid #666;
+}
+
+.form-Wrapper {
+  padding: 10px;
+}
+
+fieldset + fieldset {
+  margin-top: 40px;
+}
+
+@media (min-width: 800px) {
+  .form-Wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+
+.form-Intro h1 {
+  margin-bottom: 0;
+}
+
+.form-Intro h2 {
+  margin-top: 5px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/*We want reverse order to sort the label being after the input*/
+.form-Input_Wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.form-Input_Wrapper label {
+  color: 888;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+/*Note we are using a reverse order for flex-direction to make labels appear before the input*/
+@media (min-width: 800px) {
+  .form-Input_Wrapper {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .form-Input_Wrapper input:not([type="range"]):not([type="color"]) {
+    flex: 0 0 50%;
+  }
+  .form-Input_Wrapper label {
+    flex: 1 0 50%;
+    margin-bottom: 0;
+  }
+  textarea {
+    flex: 1 0 50%;
+  }
+}
+
+.form-Input_Wrapper + .form-Input_Wrapper {
+  margin-top: 10px;
+}
+
+legend {
+  font-size: 1.3em;
+  padding: 3px 6px;
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+input:not([type="range"]),
+textarea {
+  min-height: 30px;
+  padding: 2px;
+  font-size: 17px;
+  border: 1px solid #ebebeb;
+  outline: none;
+  transition: transform .4s, box-shadow .4s, background-position .2s;
+  background: radial-gradient(400px circle,  #fff 99%, transparent 99%), #f1f1f1;
+  background-position: -400px 90px, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  border-radius: 0;
+  position: relative;
+}
+
+input:not([type="range"]):focus,
+textarea:focus {
+  background-position: 0 0, 0 0;
+}
+
+/*This is the color of placeholder text*/
+input:placeholder-shown {
+  color: #999;
+}
+
+/*This changes the color of placeholder text when the input gets focused*/
+input:not([type="range"]):focus:placeholder-shown {
+  color: #555;
+}
+
+/*The About the film section legend and inputs*/
+.form-inquiry-wrapper legend {
+  background-color: #cc3232;
+}
+.form-inquiry-wrapper input:not([type="range"]) {
+  box-shadow: inset 0 -3px 0 #cc3232;
+}
+.form-inquiry-wrapper input:not([type="range"]):focus {
+  border: 1px solid #cc3232;
+  box-shadow: inset 0 -3px 0 #cc3232, 0 0 15px 5px #ebebeb;
+}
+
+/*The About you section legends and inputs*/
+.form-you-wrapper legend {
+  background-color: #236A7E;
+}
+.form-you-wrapper input:not([type="range"]) {
+  box-shadow: inset 0 -3px 0 #236a7e;
+}
+.form-you-wrapper input:focus {
+  border: 1px solid #236a7e;
+  box-shadow: inset 0 -3px 0 #236a7e, 0 0 15px 5px #ebebeb;
+}
+
+/*Make all inputs scale up when they get focus*/
+.form-Input_Wrapper input:focus {
+  transform: scale(1.06);
+}
+
+/*Now we want some basic styling to indicate that fields are required, valid or invalid*/
+input:required + label:after {
+  content: "*";
+  font-size: 2.1em;
+  position: relative;
+  top: 6px;
+  display: inline-flex;
+  margin-left: .2ch;
+  transition: color, 1s;
+}
+
+input:required:invalid + label:after {
+  color: red;
+}
+
+input:required:valid + label:after {
+  color: green;
+}

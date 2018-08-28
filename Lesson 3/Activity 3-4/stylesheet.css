@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.Wrap {
+  margin: 0 auto;
+}
+.Header {
+  width: 100%;
+  height: 130px;
+  background-color: #038C5A;
+}
+.WrapMiddle {
+  width: 100%;
+  font-size: 0;
+  display: flex;
+}
+.Left {
+  height: 625px;
+  width: 12.5%;
+  background-color: #03A66A;
+  display: flex;
+  flex: 1 1 120px;
+}
+.Middle {
+  height: 625px;
+  width: 62.5%;
+  background-color: #bbbf90;
+  display: flex;
+  flex: 5 1 600px;
+}
+.Right {
+  height: 625px;
+  width: 25%;
+  background-color: #03A66A;
+  display: flex;
+  flex: 2 1 240px;
+}
+.Footer {
+  height: 200px;
+  width: 100%;
+  background-color: #025059;
+}

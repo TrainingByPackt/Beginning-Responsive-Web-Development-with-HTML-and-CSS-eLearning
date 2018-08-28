@@ -1,0 +1,126 @@
+*****Activity 2-1 - Step 2*****
+
+body {
+  background-color: grey;
+}
+@media screen and (min-width: 320px) {
+  body {
+   background-color: green;
+  }
+}
+@media screen and (min-width: 550px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: orange;
+  }
+}
+@media screen and (min-width: 960px) {
+  body {
+    background-color: red;
+  }
+}
+
+
+-----------------------------------------
+
+*****Activity 2-2 - Step 2*****
+
+@media (min-width: 320px) and (orientation: portrait) {
+  body {
+   background-color: grey;
+  }
+}
+@media (min-width: 550px) and (orientation: portrait) {
+  body {
+    background-color: purple;
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  body {
+    background-color: blue;
+  }
+}
+@media (min-width: 960px) and (orientation: portrait) {
+  body {
+    background-color: aqua;
+  }
+}
+
+
+-----------------------------------------
+
+*****Activity 2-3 - Step 2*****
+
+p {
+  border: 1px solid black;
+  float: left;
+  margin: 20px;
+  padding: 10px;
+  width: 40%;
+}
+p:nth-child(2n) {
+  clear: left;
+}
+@media (max-width: 959px) {
+  p {
+    border: none;
+    border-bottom: 1px solid black;
+    float: none;
+    margin: 10px 0 0 0;
+    padding: 0 0 10px 0;
+    width: 100%;
+  }
+  p:last-of-type {
+    border-bottom: none;
+  }
+}
+
+
+------------------------------------------
+
+*****Activity 2-4 - Step 2*****
+
+body {
+  font-size: 1em;
+}
+h1 {
+  text-decoration: underline;
+}
+@media (max-width: 959px) {
+  body {
+    Font-size: 1.3em;
+  }
+}
+
+
+-----------------------------------------
+
+*****Activity 2-5 - Step 2*****
+
+a {
+  font-size: 1em;
+}
+@media (hover: none) {
+  /* styles for when the user cannot hover */
+  a {
+    font-size: 1.5em;
+  }
+}
+@media (hover) {
+  /* styles for when the user can hover */
+  a {
+    font-size: 1em;
+  }
+}
+@media (hover: on-demand) {
+  /* styles for when the user can hover but doing so requires significant effort */
+  a {
+    font-size: 1.5em;
+  }
+}
+
+

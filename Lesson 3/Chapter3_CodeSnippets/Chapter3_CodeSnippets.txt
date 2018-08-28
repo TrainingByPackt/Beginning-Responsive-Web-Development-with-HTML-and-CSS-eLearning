@@ -1,0 +1,242 @@
+*****Reverse the Order of Items*****
+
+.MenuWrap {
+  background-color: indigo;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0 1rem;
+}
+.ListItem,
+.LastItem {
+  color: #ebebeb;
+  text-decoration: none;
+}
+.ListItem {
+  margin-right: 1rem;
+ }
+.LastItem {
+  margin-right: auto;
+}
+
+
+----------------------------------
+
+*****Laying out the Items Vertically*****
+
+.MenuWrap {
+  background-color: indigo;
+  font-family: ‘Oswald', sans-serif;
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+.ListItem,
+.LastItem {
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+
+------------------------------------
+
+*****Basic Flexbox related styles - index.html*****
+
+<div class="FlexWrapper">
+  <div class="FlexInner">I am content in the inner Flexbox.</div>
+</div>
+
+--------------------------------------
+
+
+*****Basic Flexbox related styles - styles.css*****
+
+.FlexWrapper {
+  background-color: indigo;
+  display: flex;
+  height: 200px;
+  width: 400px;
+}
+.FlexInner {
+  background-color: #34005B;
+  display: flex;
+  height: 100px;
+  width: 200px;
+}
+
+-------------------------------------
+
+*****The align-items Property*****
+
+.FlexWrapper {
+  background-color: indigo;
+  display: flex;
+  height: 200px;
+  width: 400px;
+  align-items: center;
+}
+
+
+------------------------------------
+
+*****The align-self Property - index.html*****
+
+<div class="FlexWrapper">
+  <div class="FlexInner">I am content in the inner Flexbox </div>
+  <div class="FlexInner">I am content in the inner Flexbox </div>
+  <div class="FlexInner">I am content in the inner Flexbox </div>
+</div>
+
+
+-------------------------------------
+
+*****The align-self Property - styles.css*****
+
+.FlexWrapper {
+  background-color: indigo;
+  display: flex;
+  height: 200px;
+  width: 400px;
+}
+.FlexInner {
+  background-color: #34005B;
+  display: flex;
+  height: 100px;
+  width: 200px;
+}
+.AlignSelf {
+  align-self: flex-end;
+}
+
+
+--------------------------------------
+
+*****The justify-content Property - space-between*****
+
+.FlexWrapper {
+  background-color: indigo;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  width: 100%;
+}
+.FlexItems {
+  background-color: #34005B;
+  display: flex;
+  height: 100px;
+  width: 25%;
+}
+
+----------------------------------
+
+*****The flex Property*****
+
+.FlexItems {
+  border: 1px solid #ebebeb;
+  background-color: #34005B;
+  display: flex;
+  height: 100px;
+  flex: 1;
+}
+
+---------------------------------
+
+*****Exercise: Use the flex property - index.html*****
+
+<div class="FlexWrapper">
+  <div class="FlexItems FlexOne">I am content in the inner Flexbox 1.</div>
+  <div class="FlexItems FlexTwo">I am content in the inner Flexbox 2.</div>
+  <div class="FlexItems FlexThree">I am content in the inner Flexbox 3.</div>
+</div>
+
+----------------------------------
+
+*****Exercise: Use the flex property - styles.css*****
+
+.FlexItems {
+  border: 1px solid #ebebeb;
+  background-color: #34005B;
+  display: flex;
+  height: 100px;
+}
+.FlexOne {
+  flex: 1.5 0 auto;
+}
+.FlexTwo,
+.FlexThree {
+  flex: 1 0 auto;
+}
+
+
+-------------------------------------
+
+*****Exercise: Change the source order - initial markup - index.html*****
+
+<div class="FlexWrapper">
+  <div class="FlexItems FlexHeader">I am content in the Header.</div>
+  <div class="FlexItems FlexSideOne">I am content in the SideOne.</div>
+  <div class="FlexItems FlexContent">I am content in the Content.</div>
+  <div class="FlexItems FlexSideTwo">I am content in the SideTwo.</div>
+  <div class="FlexItems FlexFooter">I am content in the Footer.</div>
+</div>
+
+----------------------------------------
+
+*****Exercise: Change the source order - initial markup - styles.css*****
+
+.FlexWrapper {
+  background-color: indigo;
+  display: flex;
+  flex-direction: column;
+}
+.FlexItems {
+  display: flex;
+  align-items: center;
+  min-height: 6.25rem;
+  padding: 1rem;
+}
+.FlexHeader {
+  background-color: #105B63;
+}
+.FlexContent {
+  background-color: #FFFAD5;
+}
+.FlexSideOne {
+  background-color: #FFD34E;
+}
+.FlexSideTwo {
+  background-color: #DB9E36;
+}
+.FlexFooter {
+  background-color: #BD4932;
+}
+
+-------------------------------------
+
+*****switch the order of .FlexContent to be the first item*****
+
+
+.FlexContent {
+  background-color: #FFFAD5;
+  order: -1;
+}
+
+
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+body {
+	margin: 1em 3em;
+}
+@supports (column-width: 1em) {
+	main {
+		-webkit-column-gap: 2em;
+		   -moz-column-gap: 2em;
+		        column-gap: 2em;
+		-webkit-column-rule: thin dotted #999;
+		   -moz-column-rule: thin dotted #999;
+		        column-rule: thin dotted #999;
+		-webkit-column-width: 14em;
+		   -moz-column-width: 14em;
+		        column-width: 14em;
+	}
+}
+@supports not (column-width: 1em){
+	main {
+		max-width: 30em;
+	}
+}
+main article[class^="type"][class*="1"] {
+	background-color: red;
+}
+main article[class^="type"][class*="2"] {
+	background-color: green;
+}
+main article[class^="type"][class*="3"] {
+	background-color: blue;
+}
+p {
+	margin: 0;
+}
+footer {
+	font-weight: bold;
+	margin-top: 2em;
+}
+@supports (display: flex) {
+	footer {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+@supports not (display: flex) {
+	footer {
+		clear: left;
+		float: left;
+	}
+}

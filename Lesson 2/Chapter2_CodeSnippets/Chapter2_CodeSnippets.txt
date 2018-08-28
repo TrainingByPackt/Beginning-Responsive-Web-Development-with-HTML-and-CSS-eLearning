@@ -1,0 +1,84 @@
+*****Media Query Syntax*****
+
+body {
+  background-color: grey;
+}
+@media screen and (min-width: 320px) {
+  body {
+   background-color: green;
+  }
+}
+@media screen and (min-width: 550px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: orange;
+  }
+}
+@media screen and (min-width: 960px) {
+  body {
+    background-color: red;
+  }
+}
+
+
+------------------------------
+
+*****What can Media Queries Test for?*****
+
+@import url("tiny.css") screen and (min-width:200px) and (max-width:360px);
+
+------------------------------
+
+*****Combine Media Queries or Write Them Where it Suits? - Writing media queries underneath the original normal definition*****
+
+.thing {
+  width: 50%;
+}
+
+@media screen and (min-width: 30rem) {
+  .thing {
+    width: 75%;
+  }
+}
+
+/* A few more styles would go between them */
+.thing2 {
+  width: 65%;
+}
+
+@media screen and (min-width: 30rem) {
+  .thing2 {
+    width: 75%;
+  }
+}
+
+-------------------------------
+
+*****Combine Media Queries or Write Them Where it Suits? - Grouping all the identical media queries into a single block*****
+
+.thing {
+  width: 50%;
+}
+
+.thing2 {
+  width: 65%;
+}
+
+@media screen and (min-width: 30rem) {
+  .thing {
+    width: 75%;
+}
+  .thing2 {
+    width: 75%;
+  }
+}
+
+
+------------------------------
+
+
+

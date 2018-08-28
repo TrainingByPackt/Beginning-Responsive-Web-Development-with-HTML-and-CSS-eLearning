@@ -1,0 +1,105 @@
+*****Activity 7-1 - Step 3*****
+
+nav a {
+  transition: color 1s ease;
+}
+nav a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.main-container p {
+  opacity: 0.2;
+  transition: opacity 1s ease 0.1s;
+}
+.main-container article > *:hover p,
+.main-container aside:hover p {
+  opacity: 1;
+}
+
+-----------------------------------------
+
+*****Activity 7-2 - Step 2*****
+
+.main-container article > *,
+.main-container aside {
+  transition: box-shadow 1s ease;
+}
+.main-container article > *:hover,
+.main-container aside:hover {
+  transform: scale(1.2);
+  box-shadow: 10px 10px 5px 0px #333, inset 0px 0px 0px 2px #333;
+}
+
+
+-------------------------------------------
+
+*****Activity 7-3 - Step 2*****
+
+.flipper {
+  perspective: 400px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.flipper-object {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.panel {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flipper-horizontal .back {
+  transform: rotateY(180deg);
+}
+
+.flipper:hover .flipper-horizontal {
+  transform: rotateY(180deg);
+}
+
+-----------------------------------------------
+
+*****Activity 7-3 - Step 4*****
+
+<aside>
+  <div class="flipper">
+    <span class="flipper-object flipper-horizontal">
+      <span class="panel front">
+        <h3>aside</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+      </span>
+      <span class="panel back">
+        <h3>aside</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+      </span>
+    </span>
+  </div>
+</aside>
+
+--------------------------------------------------
+
+*****Activity 7-4 - Step 2*****
+
+@keyframes pulse {
+  100% {
+    text-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px 10px #ccc;
+  }
+}
+.main-container aside:hover {
+  animation: pulse 1s 1s infinite alternate both;
+}
+

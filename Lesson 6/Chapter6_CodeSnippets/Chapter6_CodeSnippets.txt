@@ -1,0 +1,63 @@
+*****Text Shadows - Shadows to the left and above*****
+
+.text {
+  text-shadow: -4px -4px 0px #dad7d7;
+}
+
+
+text-shadow: 4px 4px 0px hsla(140, 3%, 26%, 0.4);
+
+------------------------------------------------------
+
+*****Text Shadows - Remove text shadows at different viewport sizes*****
+
+.text {
+  text-shadow: .0625rem .0625rem 0 #bfbfbf;
+}
+@media (min-width: 30rem) {
+  .text {
+    text-shadow: none;
+  }
+}
+
+-----------------------------------------------------
+
+*****Multiple Text Shadows - Lay out the values like this to aid with readability*****
+
+.text {
+  text-shadow:
+    3px 3px #bbb, /* right and down */
+    -3px -3px #999; /* left and up */
+}
+
+----------------------------------------------------
+
+*****Specifying Gradient Direction - start gradients before they are visible within a box*****
+
+.linear-gradient {
+  background: linear-gradient(red -50%, blue);
+}
+
+----------------------------------------------------
+
+*****Background Gradient Patterns - Different declarations can be used for different responsive scenarios*****
+
+@media (min-width: 45rem) {
+  .carbon-fibre {
+    background: #333;
+  }
+}
+
+----------------------------------------------------
+
+*****Multiple Background Images - Add a general color for the background in the same declaration*****
+
+.bg {
+  background:
+    url('../img/1.png'),
+    url('../img/2.png'),
+    url('../img/3.png') left bottom, black;
+}
+
+---------------------------------------------------
+

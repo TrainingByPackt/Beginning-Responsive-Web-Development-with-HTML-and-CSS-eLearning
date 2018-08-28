@@ -1,9 +1,0 @@
-#Star {
-    fill: orange;
-    transition: all 1s;
-}
-
-#Star:hover {
-    fill: pink;
-    transform: rotate(30deg);
-}

@@ -1,0 +1,19 @@
+.text-shadow,
+.multiple-text-shadow {
+	height: 20vmin;
+	width: 20vmin;
+	border: 1px solid #111;
+	margin: 1em;
+	display: inline-flex;
+	font-family: sans-serif;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-shadow{
+    text-shadow: -4px -4px 0px #1d9fc6;
+}
+
+.multiple-text-shadow{
+	text-shadow: 0px 1px #fc0202,4px 4px 0px #1d9fc6;
+}

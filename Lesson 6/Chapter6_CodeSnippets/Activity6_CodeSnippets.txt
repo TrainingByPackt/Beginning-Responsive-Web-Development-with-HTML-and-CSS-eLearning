@@ -1,0 +1,35 @@
+*****Activity 6-1 - Step 3*****
+
+text-shadow: 1px 1px #333;
+
+-----------------------------------------------
+
+*****Activity 6-2 - Step 2*****
+
+background: radial-gradient(closest-corner circle, #333, blue, red);
+
+background: linear-gradient(#f90 0, #f90 2%, #555 2%, #eee 50%, #555 98%, #f90 98%, #f90 100%);
+
+background: radial-gradient(ellipse at top left, yellow, orange, red);
+
+----------------------------------------------
+
+*****Activity 6-3 - Step 2*****
+
+.images {
+  height: 100vh;
+  width: 100vw;
+  background:
+    url('camel.png'),
+    url('pyramids.png'),
+    url('desert.jpg');
+  background-size: 12vmax, 30vw, cover;
+  background-position: bottom 150px right 180px, 40px 40px, top center;
+  background-repeat: no-repeat;
+}
+
+----------------------------------------------
+
+*****Activity 6-4 - Step 2*****
+
+filter: drop-shadow(4px 4px 6px #333) blur(2px) saturate(150%);

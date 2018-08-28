@@ -1,0 +1,42 @@
+*****Don't Use Roles for Semantic Elements*****
+
+<header role="banner">A header with ARIA landmark banner role</header>
+
+------------------------------------
+
+*****Adding Video and Audio the HTML5 Way - Further attributes*****
+
+<video src="myVideo.mp4" width="640" height="480" controls autoplay preload="auto" loop poster="myVideoPoster.png">What, do you mean you don't understand HTML5?</video>
+
+------------------------------------
+
+*****Fallback Capability for Older Browsers*****
+
+<video width="640" height="480" controls preload="auto" loop poster="myVideoPoster.png">
+  <source src="video/myVideo.mp4" type="video/mp4">
+  <object width="640" height="480" type="application/x-shockwaveflash" data="myFlashVideo.SWF">
+    <param name="movie" value="myFlashVideo.swf" />
+    <param name="flashvars" value="controlbar=over&amp;image=myVideoPoster.jpg&amp;file=myVideo.mp4" />
+    <img src="myVideoPoster.png" width="640" height="480" alt="__TITLE__" title="No video playback capabilities, please download the video below" />
+  </object>
+  <p><b>Download Video:</b>
+    MP4 Format: <a href="myVideo.mp4">"MP4"</a>
+  </p>
+</video>
+
+
+--------------------------------------
+
+*****Responsive HTML5 Video and iFrames - videos from YouTube*****
+
+<iframe width="960" height="720" src="https://www.youtube.com/watch?v=B1_N28DA3gY" frameborder="0" allowfullscreen></iframe>
+
+--------------------------------------
+
+*****http://embedresponsively.com/*****
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed {position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class='embed-container'><iframe src='http://www.youtube.com/embed/B1_N28DA3gY' frameborder='0' allowfullscreen></iframe></div>
+
+--------------------------------------
+

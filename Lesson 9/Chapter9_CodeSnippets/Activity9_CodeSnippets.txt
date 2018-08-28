@@ -1,0 +1,16 @@
+*****Activity 9-3 - Step 2*****
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.icon {
+  animation: spin 3s 1s;
+  transform-origin: 50% 50%;
+}
+
+

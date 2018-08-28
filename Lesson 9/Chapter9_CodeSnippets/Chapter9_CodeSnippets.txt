@@ -1,0 +1,7 @@
+*****Styling an SVG with an External Style Sheet - the SVG file*****
+
+<?xml-stylesheet href="styles.css" type="text/css"?>
+<svg width="198" height="188" viewBox="0 0 198 188" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+---------------------------------------------------------------
+

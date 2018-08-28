@@ -1,0 +1,9 @@
+main {
+	-webkit-column-width: 12em;
+	   -moz-column-width: 12em;
+	        column-width: 12em;
+}
+
+p {
+	margin: 0;
+}

@@ -1,0 +1,11 @@
+.images {
+  height: 80vh;
+  width: 90vw;
+  background:
+    url('camel.png'),
+    url('pyramids.png'),
+    url('desert.jpg');
+  background-size: 12vmax, 30vw, cover;
+  background-position: bottom 150px right 180px, 40px 40px, top center;
+  background-repeat: no-repeat;
+}

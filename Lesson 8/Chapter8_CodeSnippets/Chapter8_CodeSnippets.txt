@@ -1,0 +1,53 @@
+*****Range - Display the current value of the slider with some simple JavaScript*****
+
+<input id="howYouRateIt" name="howYouRateIt" type="range" min="1" max="10" value="5" onchange="showValue(this.value)">
+<span id="range">5</span>
+
+
+
+<script>
+  function showValue(newValue)
+  {
+    document.getElementById("range").innerHTML=newValue;
+  }
+</script>
+
+
+--------------------------------------------
+
+*****Indicating Required Fields - Indicate required input fields to a user using CSS alone*****
+
+input:required {
+  /* styles */
+}
+
+-------------------------------------------
+
+*****Indicating Required Fields - Use a specific selector to target an input field that is required, only when it gains focus*****
+
+input:focus:required {
+  /* styles */
+}
+
+-------------------------------------------
+
+*****Creating a background fill effect*****
+
+input:not([type="range"]),
+textarea {
+  min-height: 30px;
+  padding: 2px;
+  font-size: 17px;
+  border: 1px solid #ebebeb;
+  outline: none;
+  transition: transform .4s, box-shadow .4s, background-position .2s;
+  background: radial-gradient(400px circle, #fff 99%, transparent 99%), #f1f1f1;
+  background-position: -400px 90px, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  border-radius: 0;
+  position: relative;
+}
+input:not([type="range"]):focus,
+textarea:focus {
+  background-position: 0 0, 0 0;
+}
